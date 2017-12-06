@@ -87,7 +87,7 @@ public class router extends ViewableAtomic
 			else 
 			{
 				m.add(makeContent("out", new packet("done", 0)));
-				holdIn("passive", processing_time);	
+				holdIn("passive", INFINITY); // INFINITY로 하는게 올바름.
 			}
 		}
 
